@@ -174,3 +174,6 @@ main{
     backdrop-filter: blur(10px);
     padding: 1.25rem 1.5rem;
 }
+.toggle-sidebar{
+    --dashboard-sidebar-width: 80px;
+}
