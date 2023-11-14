@@ -57,11 +57,9 @@ main{
     border: none;
     padding: 0;
 }
-.ds-logo-txt{
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--white) !important;
+.ds-logo img{
+    width: 120px;
+    filter: invert(1);   
 }
 .ds-menu-toggle .bar-1,.ds-menu-toggle .bar-2,.ds-menu-toggle .bar-3{
     display: block;
