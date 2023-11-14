@@ -81,19 +81,20 @@ main{
 }
 .sb-menu-group{
     height: calc(100vh - 120px);
+    overflow-y: auto;
 }
 .ds-menu ul{
     list-style: none;
     padding-left: 0;
 }
 .sb-main-menu{
-    border-bottom: 1px dashed #fff4;
+    /* border-bottom: 1px dashed #fff4; */
     padding-bottom: 0;
-    height: 100%;
-    overflow: auto;
+    /* height: 100%; */
+    /* overflow: auto; */
 }
 .sb-menu-title{
-    color: var(--white);
+    color: var(--blue-1);
     font-size: 1rem;
     font-weight: 500;
     display: block;
@@ -107,14 +108,14 @@ main{
     line-height: 1;
 }
 .ds-menu .sb-main-menu li{
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px dashed #fff2;
 }
-.ds-menu .sb-main-menu li:last-of-type{
-    margin-bottom: 0;
+.ds-menu .sb-main-menu li:last-child{
+    /* margin-bottom: 0;
     padding-bottom: 0;
-    border-bottom: none;
+    border-bottom: none !important; */
 }
 .ds-menu ul li a{
     display: flex;
@@ -129,7 +130,7 @@ main{
     color: var(--green);
 }
 .ds-menu ul li a i{
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 .text-orange{
     color: var(--orange) !important;
@@ -230,7 +231,7 @@ main{
     background: #555;
 }
 .toggle-sidebar{
-    --dashboard-sidebar-width: 70px;
+    --dashboard-sidebar-width: 65px;
 }
 .bid-card{
     background-color: var(--white);
@@ -284,8 +285,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-.pg-item.active{
+.pg-item.active,.pg-item:hover{
     background-color: var(--blue-1);
     color: var(--white)
+}
+.toggle-sidebar :is(.sb-menu-title,.sb-menu-text), .toggle-sidebar .sb-menu-group::-webkit-scrollbar{
+    display: none !important;
 }
