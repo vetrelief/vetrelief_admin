@@ -192,6 +192,7 @@ main{
     width: 24px;
     padding: 2px;
     border: 1px solid #fff8;
+    background-color: var(--white);
     border-radius: 50%;
 }
 .dc-content{
