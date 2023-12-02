@@ -295,3 +295,16 @@ main{
 .toggle-sidebar :is(.sb-menu-title,.sb-menu-text), .toggle-sidebar .sb-menu-group::-webkit-scrollbar{
     display: none !important;
 }
+@media screen and (max-width:999px) {
+    .dashboard-sidebar{
+        position: fixed;
+        left: -100%;
+    }
+    .toggle-sidebar .dashboard-sidebar{
+        position: fixed;
+        left: 0;
+    }
+    .dashboard-content{
+        width: 100%;
+    }
+}
