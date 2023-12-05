@@ -37,7 +37,7 @@ main{
 }
 .dashboard-sidebar{
     background-color: var(--dark);
-    height: 100vh;
+    height: 100dvh;
     width: var(--dashboard-sidebar-width);
     box-shadow: 0 0 10px #0003;
     border-right: 1px solid #fff2;
@@ -80,7 +80,7 @@ main{
     padding: 1rem 1.5rem 0;
 }
 .sb-menu-group{
-    height: calc(100vh - 120px);
+    height: calc(100dvh - 120px);
     overflow-y: auto;
 }
 .ds-menu ul{
@@ -196,7 +196,7 @@ main{
     border-radius: 50%;
 }
 .dc-content{
-    height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
     overflow-y: hidden;
     width: 100%;
     box-sizing: border-box;
