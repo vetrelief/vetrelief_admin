@@ -69,7 +69,7 @@ main{
 .ds-menu-toggle .bar-1,.ds-menu-toggle .bar-2,.ds-menu-toggle .bar-3{
     display: block;
     width: 1rem;
-    height: 1px;
+    height: 2px;
     background-color: var(--light);
 }
 .ds-menu-toggle .bar-2{
@@ -293,6 +293,9 @@ main{
     background-color: var(--blue-1);
     color: var(--white)
 }
+.dropdown-menu{
+    z-index: 10000 !important;
+}
 
 
 @media screen and (min-width:999px) {
@@ -310,7 +313,7 @@ main{
 @media screen and (max-width:999px) {
     .ds-menu-mobile-toggle{
         cursor: pointer;
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         font-weight: 300;
         line-height: 0;
         color: var(--white);
@@ -334,5 +337,17 @@ main{
     .section-title{
         font-size: 1rem;
         margin-bottom: 0.75rem;
+    }
+    .dc-top .search-sect{
+        width: unset;
+    }
+    .dc-top .form-search-box input,.dc-top .search-select{
+        width: 100%;
+    }
+    .dc-content{
+        padding: 0;
+    }
+    .dc-content-inner{
+        border-radius: 0 !important;
     }
 }
